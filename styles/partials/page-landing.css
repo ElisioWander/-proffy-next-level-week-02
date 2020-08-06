@@ -1,7 +1,7 @@
 :root {
     font-size: 40%;
 }
-
+/*<PAGE-LANDING>*/
 #page-landing {
     background-color: var(--color-primary);
 }
@@ -10,6 +10,7 @@
     color: var(--color-text-in-primary);
 }
 
+/*<CONTAINER>*/
 .logo-container {
     margin-bottom: 3.2rem;
 
@@ -30,4 +31,67 @@
 
 .hero-image {
     width: 100%;
+}
+
+/*<BUTTONS-CONTAINER>*/
+.buttons-container {
+    display: flex;
+    justify-content: center;
+
+    margin: 3.2rem 0;
+}
+
+.buttons-container a {
+    width: 30rem;
+    height: 10.4rem;
+
+    border-radius: .8rem;
+    
+    font: 700 2.4rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: var(--color-button-text);
+
+    transition: background-color 0.2s;
+}
+
+.buttons-container a.study {
+    margin-right: 1.6rem;
+
+    background-color: var(--color-primary-lighter);
+}
+
+.buttons-container a.study:hover {
+    background-color: var(--color-primary-light);
+}
+
+.buttons-container a.give-classes {
+    background-color: var(--color-secondary);
+}
+
+.buttons-container a.give-classes:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.buttons-container a img {
+    width: 4rem;
+
+    margin-right: 2.4rem;
+}
+/*<BUTTONS-CONTAINER/>*/
+
+.total-connections {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.8rem;
+}
+
+.total-connections img {
+    margin-left: 0.8rem;
 }
