@@ -1,0 +1,46 @@
+#page-give-classes #container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-give-classes main {
+    width: 100%;
+    max-width: 74rem;
+
+    margin: -3.2rem auto 3.2rem;
+
+    padding-top: 6.4rem;
+
+    border-radius: 0.8rem;
+
+    background-color: var(--color-box-base);
+}
+
+#page-give-classes fieldset {
+    border: none;
+
+    padding: 0 2.4rem;
+}
+
+#page-give-classes fieldset legend {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2.4rem;
+    padding-bottom: 1.6rem;
+    
+    border-bottom: solid 1px var(--color-line-in-white);
+
+    font: 700 2.4rem Archivo;
+
+    color: var(--color-text-title);
+}
+
+@media (min-width: 700px) {
+    #page-give-classes #container {
+        max-width: 100vw;
+    }
+}
