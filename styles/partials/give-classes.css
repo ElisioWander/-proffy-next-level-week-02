@@ -3,6 +3,14 @@
     height: 100vh;
 }
 
+/*<HEADER-CONTENT>*/
+#page-give-classes .page-header .header-content {
+    margin-bottom: 6.4rem;
+}
+/*<HEADER-CONTENT/>*/
+
+
+/*<MAIN>*/
 #page-give-classes main {
     width: 100%;
     max-width: 74rem;
@@ -16,10 +24,16 @@
     background-color: var(--color-box-base);
 }
 
+
+/*<FORM FIELDSET>*/
 #page-give-classes fieldset {
     border: none;
 
     padding: 0 2.4rem;
+}
+
+#page-give-classes fieldset+fieldset {
+    margin-top: 6.4rem;
 }
 
 #page-give-classes fieldset legend {
@@ -39,8 +53,134 @@
     color: var(--color-text-title);
 }
 
+#page-give-classes fieldset legend button {
+    font: 700 1.6rem Archivo;
+    
+    border: none;
+
+    cursor: pointer;
+
+    background: none;
+    color: var(--color-primary);
+
+    transition: 0.2s;
+}
+
+#page-give-classes fieldset legend button:hover {
+    transform: translateY(-5px);
+    
+    color: var(--color-primary-dark);
+}
+
+#page-give-classes .input-block+.input-block,
+#page-give-classes .input-block+.textarea-block,
+#page-give-classes .select-block+.input-block {
+    margin-top: 2.4rem;
+}
+
+#page-give-classes .schedule-item+.schedule-item {
+    margin-top: 3.2rem;
+
+    padding-top: 3.2rem;
+
+    border-top: solid 1px var(--color-line-in-white);
+}
+/*<FORM FIELDSET/>*/
+
+
+/*<MAIN FOOTER>*/
+#page-give-classes main footer {
+    margin-top: 6.4rem;
+
+    padding: 4rem 2.4rem;
+
+    border-top: solid 1px var(--color-line-in-white);
+
+    background-color: var(--color-box-footer);
+
+}
+
+#page-give-classes main footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    color: var(--color-text-complement);
+}
+
+#page-give-classes main footer p img {
+    margin-right: 2rem;
+}
+
+#page-give-classes main footer button {
+    width: 100%;
+    height: 5.6rem;
+
+    margin-top: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+
+    font: 700 1.6rem Archivo;
+
+    color: var(--color-button-text);
+    background-color: var(--color-secondary);
+
+    transition: 0.2s;
+}
+
+#page-give-classes main footer button:hover {
+    background-color: var(--color-secondary-dark);
+}
+/*<MAIN FOOTER/>*/
+/*<MAIN/>*/
+
+
+/*<MEDIA CONFIG>*/
 @media (min-width: 700px) {
     #page-give-classes #container {
         max-width: 100vw;
+    }
+
+    #page-give-classes .page-header .header-content {
+        margin-bottom: 0;
+    }
+
+    #page-give-classes main fieldset {
+        padding: 0 64px;
+    }
+
+    .schedule-item {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 1.6rem;
+    }
+
+    #page-give-classes #schedule-items .select-block+.input-block,
+    #page-give-classes #schedule-items .input-block+.input-block {
+        margin-top: 0;
+    }
+
+    #page-give-classes main footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 40px 60px;
+    }
+
+    #page-give-classes main footer button {
+        width: 200px;
+
+        margin-top: 0;
     }
 }
