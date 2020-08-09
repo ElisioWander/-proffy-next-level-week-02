@@ -170,6 +170,18 @@
         margin-top: 0;
     }
 
+    #page-give-classes #schedule-items .input-block:focus-within::after {
+        content: "";
+
+        width: calc(100% - 3.2rem);
+        height: 2px;
+        background-color: var(--color-secondary);
+
+        position: absolute;
+        left: 1.6rem;
+        bottom: 15px;
+    }
+
     #page-give-classes main footer {
         display: flex;
         align-items: center;

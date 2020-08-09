@@ -36,8 +36,7 @@
     resize: vertical;
 }
 
-.input-block:focus-within::after,
-.textarea-block:focus-within::after {
+.input-block:focus-within::after {
     content: "";
 
     width: calc(100% - 3.2rem);
@@ -49,6 +48,27 @@
     bottom: 0;
 }
 
+.textarea-block:focus-within::after {
+    content: "";
+
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background-color: var(--color-secondary);
+
+    position: absolute;
+    left: 1.6rem;
+    bottom: 7px;
+} 
+
 .select-block {
     margin-bottom: 1.4rem;
 }
+
+label small {
+    font-size: 1.2rem;
+    
+    padding-left: 1.2rem;
+
+    color: var(--color-small-info);
+}
+
