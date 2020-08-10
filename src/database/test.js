@@ -1,6 +1,7 @@
 const Database = require('./db')
+const createProffy = require('./createProffy')
 
-Database.then((db) => {
+Database.then(async (db) => {
     //insert data
     proffyValue = {
         name: "Diego Fernandes",
@@ -27,5 +28,6 @@ Database.then((db) => {
         }
     ]
 
+    await createProffy(db, { proffyValue, classValue, classScheduleValues })
 
 })

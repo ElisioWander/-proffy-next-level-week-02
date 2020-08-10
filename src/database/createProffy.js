@@ -7,10 +7,10 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
             whatsapp,
             bio
         ) VALUES (
-            ${ proffyValue.name },
-            ${ proffyValue.avatar },
-            ${ proffyValue.whatsapp },
-            ${ proffyValue.bio }
+            "${ proffyValue.name }",
+            "${ proffyValue.avatar }",
+            "${ proffyValue.whatsapp }",
+            "${ proffyValue.bio }"
         );
 
     `)
@@ -24,9 +24,9 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
             cost,
             proffy_id
         ) VALUES (
-            ${classValue.subject},
-            ${classValue.cost},
-            ${classValue.proffy_id}
+            "${ classValue.subject }",
+            "${ classValue.cost }",
+            "${ proffy_id }"
         );
 
     `)
@@ -34,5 +34,19 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
     const class_id = insertedClass.lastID
 
     //insert data into class_schedule
-    const insertedSchedule 
+    const insertedAllClassScheduleValues = classScheduleValues.map((classScheduleValue) => {
+        return db.run(`
+            INSERT INTO class_schedule (
+                class_id,
+                weekday,
+                time_from,
+                time_to
+            ) VALUES (
+                "${ class_id }",
+                "${ classScheduleValue.weekday }",
+                "${ classScheduleValue.time_from }",
+                "${ classScheduleValue.time_to }"
+            );
+        `)
+    })
 }
