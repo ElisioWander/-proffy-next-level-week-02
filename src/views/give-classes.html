@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/partials/header.css">
-    <link rel="stylesheet" href="styles/partials/form.css">
-    <link rel="stylesheet" href="styles/partials/give-classes.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap">
-    <title>Proffy | Sua plataforma de estudos</title>
-</head>
-<body id="page-give-classes">
+{% extends "layout.html" %}
 
-    <div id="container"> 
+
+{% block styles %}
+<link rel="stylesheet" href="styles/partials/header.css">
+<link rel="stylesheet" href="styles/partials/form.css">
+<link rel="stylesheet" href="styles/partials/give-classes.css">
+{% endblock styles %}
+
+  
+{% block title %}
+<title>Proffy | Dar aulas</title>
+{% endblock title %}
+    
+
+{% set pageId = "page-give-classes" %}
+
+
+{% block container %}
+<div id="container"> 
         <header class="page-header">
             <div class="top-bar-container">
                 <a href="/">
@@ -117,8 +122,9 @@
         </main>
 
     </div>
+{% endblock container %}
 
-    <script src="/scripts/addField.js"></script>
 
-</body>
-</html>
+{% block scripts %}
+<script src="/scripts/addField.js"></script>
+{% endblock scripts %}

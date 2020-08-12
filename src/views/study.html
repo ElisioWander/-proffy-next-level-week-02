@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/partials/header.css">
-    <link rel="stylesheet" href="styles/partials/form.css">
-    <link rel="stylesheet" href="styles/partials/page-study.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap">
-    <title>Proffy | Sua plataforma de estudos</title>
-</head>
-<body id="page-study">
+{% extends "layout.html" %}
 
-    <div id="container">
+
+{% block styles %}
+<link rel="stylesheet" href="styles/partials/header.css">
+<link rel="stylesheet" href="styles/partials/form.css">
+<link rel="stylesheet" href="styles/partials/page-study.css">
+{% endblock styles %}
+
+
+{% block title %}
+<title>Proffy | Estudar</title>
+{% endblock title %}
+
+
+{% set pageId = "page-study" %}
+
+
+{% block container %}
+<div id="container">
         
         <header class="page-header">
             <div class="top-bar-container">
@@ -95,8 +100,4 @@
         </main>
 
     </div>
-
-
-
-</body>
-</html>
+{% endblock container %}
