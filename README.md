@@ -1,9 +1,5 @@
 <h1 align="center">
-<<<<<<< HEAD
-    <img src="public/images/landing.svg" width="200px">
-=======
     <img src="public/images/landing.svg">
->>>>>>> f0ad23d2cd4d10e7c45bc543abc67adcd585cb08
 </h1>
 
 
