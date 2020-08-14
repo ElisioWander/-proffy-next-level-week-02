@@ -55,7 +55,7 @@ localhost:5500
 
 ---
 ## 📝 Licença
-Copyright © 2020 [@ElisioWander]()
+Copyright © 2020 [@ElisioWander](https://github.com/ElisioWander/-proffy-next-level-week-02/blob/master/LICENSE)
 
 Este projeto está sobe a [LICENÇA MIT](https://opensource.org/licenses/MIT)
 
