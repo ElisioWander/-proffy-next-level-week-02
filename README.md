@@ -1,5 +1,9 @@
 <h1 align="center">
+<<<<<<< HEAD
     <img src="public/images/landing.svg" width="200px">
+=======
+    <img src="public/images/landing.svg">
+>>>>>>> f0ad23d2cd4d10e7c45bc543abc67adcd585cb08
 </h1>
 
 
@@ -54,7 +58,7 @@ localhost:5500
 
 ---
 ## 📝 Licença
-Copyright © 2020 [@ElisioWander]()
+Copyright © 2020 [@ElisioWander](https://github.com/ElisioWander/-proffy-next-level-week-02/blob/master/LICENSE)
 
 Este projeto está sobe a [LICENÇA MIT](https://opensource.org/licenses/MIT)
 
